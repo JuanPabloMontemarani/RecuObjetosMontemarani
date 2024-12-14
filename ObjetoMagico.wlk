@@ -42,7 +42,7 @@ object amuleto {
   }
 }
 
-object ojota {        // DUDAS CON SI ES UN OBJETO O NO
+object ojota {    // Entiendo que es un objeto ya que hay una sola ojota, que hace siempre lo mismo.   
   method valorQueAporta(unMago) {
     return 10 * unMago.largoDelNombre()
   }

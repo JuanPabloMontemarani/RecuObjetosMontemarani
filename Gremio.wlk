@@ -22,7 +22,7 @@ class Gremio{
   //PUNTO 2 PARTE B
   method desafiar(unOponente) { // un oponente puede ser un gremio o un mago
     if(self.esVencidoPor(unOponente)){
-      self.robarEnergiaMagica(unOponente)
+      self.robarEnergiaMagicaATodos(unOponente)
     }
   }
 
@@ -38,7 +38,7 @@ class Gremio{
     return self.lider().poderTotal()
   }
 
-  method robarEnergiaMagica(unOponente) {
+  method robarEnergiaMagicaATodos(unOponente) {
     unOponente.magos().forEach({unMago => lider.robarEnergiaMagica(unMago)})
   }
 

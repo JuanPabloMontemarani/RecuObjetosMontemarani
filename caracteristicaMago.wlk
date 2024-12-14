@@ -3,7 +3,7 @@ import Mago.*
 // El enunciado decia que deben poder cambiar a lo largo del tiempo. No pide implementar ni tampoco da la condicion para que 
 // cambien. Pero por este motivouse composicion y no herencia. Ya que seria mas facil cambiar la caracteristica
 object aprendiz{
-  method esVencida(unMago,unAtacante) {
+  method esVencida(unMago,unAtacante) {  // con es vencida me refiero a la caracteristica. La caracteristica del mago es vencida
     return unMago.resistencia() < unAtacante.poderTotal()
   }
 
@@ -23,7 +23,7 @@ object veterano {
 }
 
 object inmortal{
-  method esVencidoPor(unMago,unAtacante) {
+  method esVencida(unMago,unAtacante) {
     return false
   }
 
